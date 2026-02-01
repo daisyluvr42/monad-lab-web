@@ -1,69 +1,49 @@
-import { ReactNode } from "react";
+"use client";
+
+import { useI18n } from "@/components/contexts/i18n-provider";
 
 import { Item, ItemDescription, ItemIcon, ItemTitle } from "../../ui/item";
 import { Section } from "../../ui/section";
 
-interface ItemProps {
+interface UnitItem {
+  label: string;
   title: string;
   description: string;
-  icon: ReactNode;
 }
 
 interface ItemsProps {
   title?: string;
-  items?: ItemProps[] | false;
+  items?: UnitItem[] | false;
   id?: string;
   className?: string;
 }
 
 export default function Items({
-  title = "The Units",
-  items = [
-    {
-      title: "Introspective Intelligence",
-      description:
-        "Leveraging AI and algorithmic models to explore the boundaries of the human psyche. From ancient metaphysical systems like BaZi to modern Core Cognitive Behavioral Therapy (CCBT), we translate abstract inner patterns into actionable digital insights.",
-      icon: (
-        <span className="text-muted-foreground font-mono text-xs tracking-[0.2em] uppercase">
-          Unit 01:
-        </span>
-      ),
-    },
-    {
-      title: "Generative Alchemy:",
-      description: "AI-assisted storytelling & creative production.",
-      icon: (
-        <span className="text-muted-foreground font-mono text-xs tracking-[0.2em] uppercase">
-          Unit 02:
-        </span>
-      ),
-    },
-    {
-      title: "Precision Vision:",
-      description:
-        "Computer vision for medical & industrial identification.",
-      icon: (
-        <span className="text-muted-foreground font-mono text-xs tracking-[0.2em] uppercase">
-          Unit 03:
-        </span>
-      ),
-    },
-  ],
+  title,
+  items,
   id = "units",
   className,
 }: ItemsProps) {
+  const { t, tm } = useI18n();
+  const resolvedTitle = title ?? t("units.title");
+  const resolvedItems = items === undefined ? tm<UnitItem[]>("units.items") : items;
+
   return (
     <Section id={id} className={className}>
       <div className="max-w-container mx-auto flex flex-col items-center gap-6 sm:gap-20">
         <h2 className="max-w-[560px] text-center text-3xl leading-tight font-semibold sm:text-5xl sm:leading-tight">
-          {title}
+          {resolvedTitle}
         </h2>
-        {items !== false && items.length > 0 && (
+        {resolvedItems !== false && resolvedItems.length > 0 && (
           <div className="grid auto-rows-fr grid-cols-1 gap-6 sm:grid-cols-3">
-            {items.map((item, index) => (
+            {resolvedItems.map((item, index) => (
               <Item key={index}>
                 <ItemTitle className="flex items-center gap-2">
-                  <ItemIcon>{item.icon}</ItemIcon>
+                  <ItemIcon>
+                    <span className="text-muted-foreground font-mono text-xs tracking-[0.2em] uppercase">
+                      {item.label}
+                    </span>
+                  </ItemIcon>
                   {item.title}
                 </ItemTitle>
                 <ItemDescription className="max-w-none">

@@ -1,5 +1,8 @@
+"use client";
+
 import { ReactNode } from "react";
 
+import { useI18n } from "@/components/contexts/i18n-provider";
 import { cn } from "@/lib/utils";
 
 import MonadMark from "../../logos/monad";
@@ -23,6 +26,8 @@ export default function FooterSection({
   contactEmail = "founder@monad-lab.com",
   className,
 }: FooterProps) {
+  const { t } = useI18n();
+
   return (
     <footer className={cn("bg-background w-full px-4", className)}>
       <div className="max-w-container mx-auto">
@@ -34,14 +39,16 @@ export default function FooterSection({
                 <h3 className="text-xl font-bold">{name}</h3>
               </div>
               <p className="text-muted-foreground max-w-[420px] text-sm">
-                Encapsulating Complexity.
+                {t("footer.tagline")}
               </p>
               <div className="text-muted-foreground font-mono text-xs">
-                Founder ID: Xiangyu Huang
+                {t("footer.founderLabel")}: Xiangyu Huang
               </div>
             </FooterColumn>
             <FooterColumn>
-              <h3 className="text-md pt-1 font-semibold">Contact</h3>
+              <h3 className="text-md pt-1 font-semibold">
+                {t("footer.contactTitle")}
+              </h3>
               <a
                 href={`mailto:${contactEmail}`}
                 className="text-muted-foreground font-mono text-sm"
@@ -51,11 +58,23 @@ export default function FooterSection({
             </FooterColumn>
           </FooterContent>
           <FooterBottom>
-            <div>© 2026 Monad-lab Works LLC. All rights reserved.</div>
+            <div>{t("footer.copyright")}</div>
             <div className="flex flex-col items-center gap-2 text-center sm:flex-row sm:gap-4">
-              <span>Registered in Delaware, USA.</span>
+              <span>{t("footer.registered")}</span>
+              <a
+                href="/privacy"
+                className="underline underline-offset-4 hover:text-foreground"
+              >
+                {t("footer.privacy")}
+              </a>
+              <a
+                href="/terms"
+                className="underline underline-offset-4 hover:text-foreground"
+              >
+                {t("footer.terms")}
+              </a>
               <span>
-                Contact:{" "}
+                {t("footer.contactLabel")} {" "}
                 <a href={`mailto:${contactEmail}`} className="font-mono">
                   {contactEmail}
                 </a>
