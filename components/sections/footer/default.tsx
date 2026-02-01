@@ -20,7 +20,7 @@ interface FooterProps {
 export default function FooterSection({
   logo = <MonadMark />,
   name = "Monad-lab Works",
-  contactEmail = "zero@monad-lab.com",
+  contactEmail = "founder@monad-lab.com",
   className,
 }: FooterProps) {
   return (
@@ -37,7 +37,7 @@ export default function FooterSection({
                 Encapsulating Complexity.
               </p>
               <div className="text-muted-foreground font-mono text-xs">
-                Founder ID: Employee Zero
+                Founder ID: Xiangyu Huang
               </div>
             </FooterColumn>
             <FooterColumn>

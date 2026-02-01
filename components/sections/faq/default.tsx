@@ -66,7 +66,7 @@ export default function FAQ({
               href={siteConfig.links.email}
               className="font-mono underline underline-offset-2"
             >
-              zero@monad-lab.com
+              founder@monad-lab.com
             </a>{" "}
             with a brief overview of your project and desired outcomes.
           </p>

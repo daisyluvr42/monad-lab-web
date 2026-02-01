@@ -14,7 +14,7 @@ interface ContactProps {
 export default function Contact({
   title = "Open a Channel.",
   description = "Open a channel to the lab for partnerships, research, or bespoke systems.",
-  email = "zero@monad-lab.com",
+  email = "founder@monad-lab.com",
   id = "contact",
   className,
 }: ContactProps) {

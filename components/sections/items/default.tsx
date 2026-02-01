@@ -20,8 +20,9 @@ export default function Items({
   title = "The Units",
   items = [
     {
-      title: "Predictive Logic:",
-      description: "Quantitative analysis & algorithmic market modeling.",
+      title: "Introspective Intelligence",
+      description:
+        "Leveraging AI and algorithmic models to explore the boundaries of the human psyche. From ancient metaphysical systems like BaZi to modern Core Cognitive Behavioral Therapy (CCBT), we translate abstract inner patterns into actionable digital insights.",
       icon: (
         <span className="text-muted-foreground font-mono text-xs tracking-[0.2em] uppercase">
           Unit 01:

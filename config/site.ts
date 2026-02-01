@@ -6,11 +6,11 @@ export const siteConfig = {
   description:
     "A multi-disciplinary technology studio specializing in AI-driven content generation and advanced human-computer interaction software.",
   links: {
-    email: "mailto:zero@monad-lab.com",
+    email: "mailto:founder@monad-lab.com",
   },
   pricing: {
-    pro: "mailto:zero@monad-lab.com",
-    team: "mailto:zero@monad-lab.com",
+    pro: "mailto:founder@monad-lab.com",
+    team: "mailto:founder@monad-lab.com",
   },
   stats: {
     figma: 0,

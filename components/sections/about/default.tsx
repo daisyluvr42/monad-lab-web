@@ -32,7 +32,7 @@ export default function About({
       </p>
     </>
   ),
-  founderId = "Employee Zero",
+  founderId = "Xiangyu Huang",
   id = "about",
   className,
 }: AboutProps) {

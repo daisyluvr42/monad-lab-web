@@ -25,10 +25,10 @@ export const metadata: Metadata = {
   ],
   authors: [
     {
-      name: "Employee Zero",
+      name: "Xiangyu Huang",
     },
   ],
-  creator: "Employee Zero",
+  creator: "Xiangyu Huang",
   openGraph: {
     type: "website",
     locale: "en_US",
