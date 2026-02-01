@@ -4,6 +4,7 @@ import Link from "next/link";
 import * as React from "react";
 import { ReactNode } from "react";
 
+import { useI18n } from "@/components/contexts/i18n-provider";
 import { cn } from "@/lib/utils";
 
 import MonadMark from "../logos/monad";
@@ -30,6 +31,11 @@ interface MenuItem {
   content?: ReactNode;
 }
 
+interface NavLink {
+  label: string;
+  href: string;
+}
+
 interface NavigationProps {
   menuItems?: MenuItem[];
   components?: ComponentItem[];
@@ -45,39 +51,28 @@ interface NavigationProps {
 }
 
 export default function Navigation({
-  menuItems = [
-    {
-      title: "Home",
-      isLink: true,
-      href: "#home",
-    },
-    {
-      title: "Units",
-      isLink: true,
-      href: "#units",
-    },
-    {
-      title: "About",
-      isLink: true,
-      href: "#about",
-    },
-    {
-      title: "Contact",
-      isLink: true,
-      href: "#contact",
-    },
-  ],
+  menuItems,
   components = [],
   logo = <MonadMark />,
   logoTitle = "Monad-lab Works",
   logoDescription = "Encapsulating Complexity.",
-  logoHref = "#home",
+  logoHref = "/#home",
   introItems = [],
 }: NavigationProps) {
+  const { tm } = useI18n();
+  const navLinks = tm<NavLink[]>("nav.links");
+  const resolvedMenuItems =
+    menuItems ??
+    navLinks.map((link) => ({
+      title: link.label,
+      href: link.href,
+      isLink: true,
+    }));
+
   return (
     <NavigationMenu className="hidden md:flex">
       <NavigationMenuList>
-        {menuItems.map((item, index) => (
+        {resolvedMenuItems.map((item, index) => (
           <NavigationMenuItem key={index}>
             {item.isLink ? (
               <NavigationMenuLink

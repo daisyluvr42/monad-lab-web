@@ -1,11 +1,15 @@
+"use client";
+
 import { type VariantProps } from "class-variance-authority";
 import { Menu } from "lucide-react";
 import { ReactNode } from "react";
 
+import { useI18n } from "@/components/contexts/i18n-provider";
 import { cn } from "@/lib/utils";
 
 import MonadMark from "../../logos/monad";
 import { Button, buttonVariants } from "../../ui/button";
+import LanguageToggle from "../../ui/language-toggle";
 import {
   Navbar as NavbarComponent,
   NavbarLeft,
@@ -39,21 +43,31 @@ interface NavbarProps {
   className?: string;
 }
 
+interface NavLink {
+  label: string;
+  href: string;
+}
+
 export default function Navbar({
   logo = <MonadMark />,
   name = "Monad-lab Works",
-  homeUrl = "#home",
-  mobileLinks = [
-    { text: "Home", href: "#home" },
-    { text: "Units", href: "#units" },
-    { text: "About", href: "#about" },
-    { text: "Contact", href: "#contact" },
-  ],
+  homeUrl = "/#home",
+  mobileLinks,
   actions = [],
   showNavigation = true,
   customNavigation,
   className,
 }: NavbarProps) {
+  const { tm } = useI18n();
+  const navLinks = tm<NavLink[]>("nav.links");
+  const resolvedMobileLinks =
+    mobileLinks ?? navLinks.map((link) => ({ text: link.label, href: link.href }));
+  const menuItems = navLinks.map((link) => ({
+    title: link.label,
+    href: link.href,
+    isLink: true,
+  }));
+
   return (
     <header className={cn("sticky top-0 z-50 -mb-4 px-4 pb-4", className)}>
       <div className="fade-bottom bg-background/15 absolute left-0 h-24 w-full backdrop-blur-lg"></div>
@@ -67,7 +81,7 @@ export default function Navbar({
               {logo}
               {name}
             </a>
-            {showNavigation && (customNavigation || <Navigation />)}
+            {showNavigation && (customNavigation || <Navigation menuItems={menuItems} />)}
           </NavbarLeft>
           <NavbarRight>
             {actions.map((action, index) =>
@@ -93,6 +107,7 @@ export default function Navbar({
                 </a>
               ),
             )}
+            <LanguageToggle className="hidden md:flex" />
             <Sheet>
               <SheetTrigger asChild>
                 <Button
@@ -112,7 +127,7 @@ export default function Navbar({
                   >
                     <span>{name}</span>
                   </a>
-                  {mobileLinks.map((link, index) => (
+                  {resolvedMobileLinks.map((link, index) => (
                     <a
                       key={index}
                       href={link.href}
@@ -121,6 +136,7 @@ export default function Navbar({
                       {link.text}
                     </a>
                   ))}
+                  <LanguageToggle className="mt-4" />
                 </nav>
               </SheetContent>
             </Sheet>

@@ -2,7 +2,9 @@ import "@/app/globals.css";
 
 import type { Metadata } from "next";
 
+import { I18nProvider } from "@/components/contexts/i18n-provider";
 import { ThemeProvider } from "@/components/contexts/theme-provider";
+import { LanguageTransition } from "@/components/ui/language-transition";
 import { ibmPlexMono, inter } from "@/lib/fonts";
 
 import { siteConfig } from "../config/site";
@@ -71,7 +73,11 @@ export default function RootLayout({
       className={`dark ${inter.variable} ${ibmPlexMono.variable}`}
     >
       <body className={`${inter.className} bg-background antialiased`}>
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          <I18nProvider>
+            <LanguageTransition>{children}</LanguageTransition>
+          </I18nProvider>
+        </ThemeProvider>
       </body>
     </html>
   );
