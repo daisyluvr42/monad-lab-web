@@ -1,0 +1,206 @@
+{
+  "nav": {
+    "links": [
+      { "label": "Home", "href": "/#home" },
+      { "label": "Units", "href": "/#units" },
+      { "label": "About", "href": "/#about" },
+      { "label": "Contact", "href": "/#contact" },
+      { "label": "Privacy Policy", "href": "/privacy" },
+      { "label": "Terms of Service", "href": "/terms" }
+    ],
+    "toggle": {
+      "en": "EN",
+      "zh": "中",
+      "label": "Language"
+    }
+  },
+  "hero": {
+    "title": "Monad-lab Works: Encapsulating Complexity.",
+    "description": "A multi-disciplinary technology studio specializing in AI-driven content generation and advanced human-computer interaction software.",
+    "cta": "Explore the Lab"
+  },
+  "units": {
+    "title": "The Units",
+    "items": [
+      {
+        "label": "Unit 01:",
+        "title": "Introspective Intelligence",
+        "description": "Leveraging AI and algorithmic models to explore the boundaries of the human psyche."
+      },
+      {
+        "label": "Unit 02:",
+        "title": "Generative Alchemy",
+        "description": "AI-assisted storytelling & creative production."
+      },
+      {
+        "label": "Unit 03:",
+        "title": "Precision Vision",
+        "description": "Computer vision for medical & industrial identification."
+      }
+    ]
+  },
+  "about": {
+    "eyebrow": "About",
+    "title": "One Person, One Universe.",
+    "paragraphs": [
+      "Monad-lab Works began as a single operator building complete systems from first principles. Each engagement is treated as its own universe: bounded, coherent, and internally consistent.",
+      "The Monad is a self-contained unit of logic. We design our software the same way, with precise interfaces and composable modules that preserve clarity while scaling complexity."
+    ],
+    "founderLabel": "Founder ID",
+    "founderNote": "A single identity guiding a multi-disciplinary studio, unifying research, design, and engineering under one logic."
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Open a Channel.",
+    "description": "Open a channel to the lab for partnerships, research, or bespoke systems."
+  },
+  "footer": {
+    "tagline": "Encapsulating Complexity.",
+    "founderLabel": "Founder ID",
+    "contactTitle": "Contact",
+    "copyright": "© 2026 Monad-lab Works LLC. All rights reserved.",
+    "registered": "Registered in Delaware, USA.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "contactLabel": "Contact:"
+  },
+  "privacy": {
+    "eyebrow": "Privacy Policy for Monad-lab Works LLC",
+    "title": "Privacy Policy",
+    "updated": "Last Updated: February 2, 2026",
+    "intro": "Welcome to Monad-lab Works LLC (\"we,\" \"our,\" or \"us\"). We are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our software applications, including our introspective AI tools and creative platforms.",
+    "sections": [
+      {
+        "title": "1. Information We Collect",
+        "body": [
+          "To provide our \"Unit 01: Introspective Intelligence\" services (such as metaphysical analysis and CCBT tools), we may collect:"
+        ],
+        "items": [
+          {
+            "label": "Personal Data",
+            "text": "Name, email address, and birth details (date, time, and location) specifically for algorithmic calculations."
+          },
+          {
+            "label": "Usage Data",
+            "text": "Information on how you interact with our apps to improve user experience."
+          },
+          {
+            "label": "Payment Data",
+            "text": "All payments are processed through Stripe. We do not store your credit card information on our servers."
+          }
+        ]
+      },
+      {
+        "title": "2. How We Use Your Information",
+        "body": ["We use your data solely to:"],
+        "items": [
+          { "label": "", "text": "Generate personalized insights and AI-driven content." },
+          { "label": "", "text": "Process transactions via Stripe Atlas-supported systems." },
+          { "label": "", "text": "Maintain and improve our technology studio's products." }
+        ]
+      },
+      {
+        "title": "3. Data Protection & Storage",
+        "body": [
+          "As a \"One-Person Business\" driven by the philosophy of the Monad, we prioritize data integrity:"
+        ],
+        "items": [
+          {
+            "label": "",
+            "text": "We do not sell or trade your personal or introspective data to third parties."
+          },
+          {
+            "label": "",
+            "text": "We use industry-standard encryption to protect your information."
+          }
+        ]
+      },
+      {
+        "title": "4. International Transfers",
+        "body": [
+          "Monad-lab Works LLC is incorporated in Delaware, USA. By using our services, you consent to the transfer of information to the US, where data protection laws may differ from those in your jurisdiction."
+        ]
+      },
+      {
+        "title": "5. Contact Us",
+        "body": ["If you have any questions about this Privacy Policy, please contact us at:"],
+        "contactLabel": "Email",
+        "contactEmail": "founder@monad-lab.com"
+      }
+    ]
+  },
+  "terms": {
+    "eyebrow": "Terms of Service for Monad-lab Works LLC",
+    "title": "Terms of Service",
+    "updated": "Effective Date: February 2, 2026",
+    "intro": "Welcome to Monad-lab Works. By accessing our website (https://www.google.com/search?q=monad-lab.com) or using our applications (the \"Services\"), you agree to be bound by these Terms of Service.",
+    "sections": [
+      {
+        "title": "1. Services Provided",
+        "body": [
+          "Monad-lab Works LLC provides AI-driven software for introspective analysis, content generation, and technical tools. All tools provided are for entertainment, educational, or creative purposes only."
+        ]
+      },
+      {
+        "title": "2. Disclaimers (Important)",
+        "items": [
+          {
+            "label": "No Professional Advice",
+            "text": "Insights provided by our \"Introspective Intelligence\" tools (including metaphysical or CCBT-based analysis) are generated by AI and do not constitute medical, psychological, financial, or legal advice."
+          },
+          {
+            "label": "\"As Is\" Basis",
+            "text": "Our services are provided \"as is\" without any warranties, express or implied. Monad-lab Works LLC does not guarantee the accuracy or reliability of any AI-generated results."
+          }
+        ]
+      },
+      {
+        "title": "3. Payments and Subscriptions",
+        "items": [
+          { "label": "Processing", "text": "All transactions are processed securely via Stripe." },
+          {
+            "label": "No Refunds",
+            "text": "Due to the digital nature of our services, all sales are final. We do not offer refunds once a digital report is generated or a subscription period has commenced, except as required by law."
+          },
+          {
+            "label": "Cancellations",
+            "text": "You may cancel your subscription at any time through your account settings or by contacting founder@monad-lab.com."
+          }
+        ]
+      },
+      {
+        "title": "4. Intellectual Property",
+        "items": [
+          {
+            "label": "Our Content",
+            "text": "The software, branding (Monad-lab), and original algorithms are the property of Monad-lab Works LLC."
+          },
+          {
+            "label": "User Content",
+            "text": "You retain ownership of any input data, but grant us a license to process it as necessary to provide the requested services."
+          }
+        ]
+      },
+      {
+        "title": "5. Limitation of Liability",
+        "body": [
+          "To the maximum extent permitted by law, Monad-lab Works LLC and its sole operator Xiangyu Huang shall not be liable for any indirect, incidental, or consequential damages arising from your use of the services."
+        ]
+      },
+      {
+        "title": "6. Governing Law",
+        "body": [
+          "These terms are governed by the laws of the State of Delaware, USA, without regard to its conflict of law principles."
+        ]
+      },
+      {
+        "title": "7. Contact",
+        "body": [
+          "For any legal or billing inquiries, please contact: Monad-lab Works LLC"
+        ],
+        "contactLabel": "Email",
+        "contactEmail": "founder@monad-lab.com"
+      }
+    ]
+  }
+}

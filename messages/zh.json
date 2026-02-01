@@ -1,0 +1,240 @@
+{
+  "nav": {
+    "links": [
+      {
+        "label": "首页",
+        "href": "/#home"
+      },
+      {
+        "label": "单元",
+        "href": "/#units"
+      },
+      {
+        "label": "关于",
+        "href": "/#about"
+      },
+      {
+        "label": "联系",
+        "href": "/#contact"
+      },
+      {
+        "label": "隐私政策",
+        "href": "/privacy"
+      },
+      {
+        "label": "服务条款",
+        "href": "/terms"
+      }
+    ],
+    "toggle": {
+      "en": "EN",
+      "zh": "中",
+      "label": "语言"
+    }
+  },
+  "hero": {
+    "title": "Monad-lab Works：封装复杂性。",
+    "description": "一个多学科技术工作室，专注于 AI 驱动的内容生成与先进的人机交互软件。",
+    "cta": "探索实验室"
+  },
+  "units": {
+    "title": "核心单元",
+    "items": [
+      {
+        "label": "单元 01：",
+        "title": "内省智能",
+        "description": "运用 AI 与算法模型探索人类意识与命运的数字边界"
+      },
+      {
+        "label": "单元 02：",
+        "title": "生成炼金",
+        "description": "AI 辅助叙事与创意生产。"
+      },
+      {
+        "label": "单元 03：",
+        "title": "精密视觉",
+        "description": "用于医疗与工业识别的计算机视觉。"
+      }
+    ]
+  },
+  "about": {
+    "eyebrow": "关于",
+    "title": "一人一宇宙。",
+    "paragraphs": [
+      "Monad-lab Works 起步于单人构建完整系统的实践。每一次合作都被视作一个自洽的宇宙：边界清晰、逻辑一致。",
+      "“Monad”是一种自洽的逻辑单元。我们以同样的方式设计软件，通过精准接口与可组合模块，在复杂增长中保持清晰。"
+    ],
+    "founderLabel": "创始人 ID",
+    "founderNote": "由单一身份统合多学科工作室，将研究、设计与工程在同一逻辑下协同。"
+  },
+  "contact": {
+    "eyebrow": "联系",
+    "title": "开启联络。",
+    "description": "如需合作、研究或定制系统，请与实验室建立联系。"
+  },
+  "footer": {
+    "tagline": "封装复杂性。",
+    "founderLabel": "创始人 ID",
+    "contactTitle": "联系",
+    "copyright": "© 2026 Monad-lab Works LLC. 保留所有权利。",
+    "registered": "美国特拉华州注册。",
+    "privacy": "隐私政策",
+    "terms": "服务条款",
+    "contactLabel": "联系："
+  },
+  "privacy": {
+    "eyebrow": "Monad-lab Works LLC 隐私政策",
+    "title": "隐私政策",
+    "updated": "最后更新：2026 年 2 月 2 日",
+    "intro": "欢迎来到 Monad-lab Works LLC（“我们”或“我们的”）。我们致力于保护您的隐私。本隐私政策说明当您使用我们的软件应用（包括内省型 AI 工具与创意平台）时，我们如何收集、使用并保护您的信息。",
+    "sections": [
+      {
+        "title": "1. 我们收集的信息",
+        "body": [
+          "为提供我们的“Unit 01: Introspective Intelligence”服务（如形而上学洞察与 CCBT 工具），我们可能收集："
+        ],
+        "items": [
+          {
+            "label": "个人信息",
+            "text": "姓名、电子邮件以及出生信息（日期、时间与地点），用于算法计算。"
+          },
+          {
+            "label": "使用数据",
+            "text": "您如何使用应用的交互信息，用于改进体验。"
+          },
+          {
+            "label": "支付数据",
+            "text": "所有付款均通过 Stripe 处理。我们不会在服务器上存储您的信用卡信息。"
+          }
+        ]
+      },
+      {
+        "title": "2. 我们如何使用您的信息",
+        "body": [
+          "我们仅将您的数据用于："
+        ],
+        "items": [
+          {
+            "label": "",
+            "text": "生成个性化洞见与 AI 驱动内容。"
+          },
+          {
+            "label": "",
+            "text": "通过 Stripe Atlas 支持的系统处理交易。"
+          },
+          {
+            "label": "",
+            "text": "维护并改进我们工作室的产品。"
+          }
+        ]
+      },
+      {
+        "title": "3. 数据保护与存储",
+        "body": [
+          "作为秉持 Monad 哲学的“单人企业”，我们重视数据完整性："
+        ],
+        "items": [
+          {
+            "label": "",
+            "text": "我们不会向第三方出售或交易您的个人或内省数据。"
+          },
+          {
+            "label": "",
+            "text": "我们使用行业标准加密保护您的信息。"
+          }
+        ]
+      },
+      {
+        "title": "4. 跨境传输",
+        "body": [
+          "Monad-lab Works LLC 在美国特拉华州注册。使用我们的服务即表示您同意将信息传输至美国，该地区的数据保护法律可能与您所在司法辖区不同。"
+        ]
+      },
+      {
+        "title": "5. 联系我们",
+        "body": [
+          "如对本隐私政策有任何疑问，请通过以下方式联系我们："
+        ],
+        "contactLabel": "邮箱",
+        "contactEmail": "founder@monad-lab.com"
+      }
+    ]
+  },
+  "terms": {
+    "eyebrow": "Monad-lab Works LLC 服务条款",
+    "title": "服务条款",
+    "updated": "生效日期：2026 年 2 月 2 日",
+    "intro": "欢迎使用 Monad-lab Works。访问我们的网站（https://www.google.com/search?q=monad-lab.com）或使用我们的应用（“服务”）即表示您同意受本服务条款约束。",
+    "sections": [
+      {
+        "title": "1. 服务内容",
+        "body": [
+          "Monad-lab Works LLC 提供用于内省分析、内容生成与技术工具的 AI 软件。所有工具仅用于娱乐、教育或创意目的。"
+        ]
+      },
+      {
+        "title": "2. 免责声明（重要）",
+        "items": [
+          {
+            "label": "不构成专业建议",
+            "text": "我们的“Introspective Intelligence”工具（包括形而上或 CCBT 分析）产生的洞见由 AI 生成，不构成医疗、心理、金融或法律建议。"
+          },
+          {
+            "label": "“按现状”提供",
+            "text": "我们的服务按“现状”提供，不附带任何明示或暗示的保证。Monad-lab Works LLC 不保证任何 AI 生成结果的准确性或可靠性。"
+          }
+        ]
+      },
+      {
+        "title": "3. 付款与订阅",
+        "items": [
+          {
+            "label": "处理方式",
+            "text": "所有交易均通过 Stripe 安全处理。"
+          },
+          {
+            "label": "不予退款",
+            "text": "鉴于数字化服务的性质，一经生成数字报告或订阅期开始，除法律要求外不予退款。"
+          },
+          {
+            "label": "取消订阅",
+            "text": "您可随时在账户设置中取消订阅，或联系 founder@monad-lab.com。"
+          }
+        ]
+      },
+      {
+        "title": "4. 知识产权",
+        "items": [
+          {
+            "label": "我们的内容",
+            "text": "软件、品牌（Monad-lab）与原创算法均归 Monad-lab Works LLC 所有。"
+          },
+          {
+            "label": "用户内容",
+            "text": "您保留输入数据的所有权，但授权我们为提供服务而进行必要处理。"
+          }
+        ]
+      },
+      {
+        "title": "5. 责任限制",
+        "body": [
+          "在法律允许的最大范围内，Monad-lab Works LLC 及其唯一运营者 Xiangyu Huang 对您使用服务导致的任何间接、附带或后果性损害不承担责任。"
+        ]
+      },
+      {
+        "title": "6. 适用法律",
+        "body": [
+          "本条款受美国特拉华州法律管辖，不考虑其冲突法原则。"
+        ]
+      },
+      {
+        "title": "7. 联系方式",
+        "body": [
+          "如有任何法律或账单问题，请联系：Monad-lab Works LLC"
+        ],
+        "contactLabel": "邮箱",
+        "contactEmail": "founder@monad-lab.com"
+      }
+    ]
+  }
+}
