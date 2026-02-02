@@ -1,16 +1,26 @@
 {
   "nav": {
     "links": [
-      { "label": "Home", "href": "/#home" },
-      { "label": "Units", "href": "/#units" },
-      { "label": "About", "href": "/#about" },
-      { "label": "Contact", "href": "/#contact" },
-      { "label": "Privacy Policy", "href": "/privacy" },
-      { "label": "Terms of Service", "href": "/terms" }
+      {
+        "label": "Home",
+        "href": "/#home"
+      },
+      {
+        "label": "Units",
+        "href": "/#units"
+      },
+      {
+        "label": "About",
+        "href": "/#about"
+      },
+      {
+        "label": "Contact",
+        "href": "/#contact"
+      }
     ],
     "toggle": {
       "en": "EN",
-      "zh": "中",
+      "zh": "\u4e2d",
       "label": "Language"
     }
   },
@@ -58,7 +68,7 @@
     "tagline": "Encapsulating Complexity.",
     "founderLabel": "Founder ID",
     "contactTitle": "Contact",
-    "copyright": "© 2026 Monad-lab Works LLC. All rights reserved.",
+    "copyright": "\u00a9 2026 Monad-lab Works LLC. All rights reserved.",
     "registered": "Registered in Delaware, USA.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
@@ -92,11 +102,22 @@
       },
       {
         "title": "2. How We Use Your Information",
-        "body": ["We use your data solely to:"],
+        "body": [
+          "We use your data solely to:"
+        ],
         "items": [
-          { "label": "", "text": "Generate personalized insights and AI-driven content." },
-          { "label": "", "text": "Process transactions via Stripe Atlas-supported systems." },
-          { "label": "", "text": "Maintain and improve our technology studio's products." }
+          {
+            "label": "",
+            "text": "Generate personalized insights and AI-driven content."
+          },
+          {
+            "label": "",
+            "text": "Process transactions via Stripe Atlas-supported systems."
+          },
+          {
+            "label": "",
+            "text": "Maintain and improve our technology studio's products."
+          }
         ]
       },
       {
@@ -123,7 +144,9 @@
       },
       {
         "title": "5. Contact Us",
-        "body": ["If you have any questions about this Privacy Policy, please contact us at:"],
+        "body": [
+          "If you have any questions about this Privacy Policy, please contact us at:"
+        ],
         "contactLabel": "Email",
         "contactEmail": "founder@monad-lab.com"
       }
@@ -157,7 +180,10 @@
       {
         "title": "3. Payments and Subscriptions",
         "items": [
-          { "label": "Processing", "text": "All transactions are processed securely via Stripe." },
+          {
+            "label": "Processing",
+            "text": "All transactions are processed securely via Stripe."
+          },
           {
             "label": "No Refunds",
             "text": "Due to the digital nature of our services, all sales are final. We do not offer refunds once a digital report is generated or a subscription period has commenced, except as required by law."
@@ -184,7 +210,7 @@
       {
         "title": "5. Limitation of Liability",
         "body": [
-          "To the maximum extent permitted by law, Monad-lab Works LLC and its sole operator Xiangyu Huang shall not be liable for any indirect, incidental, or consequential damages arising from your use of the services."
+          "To the maximum extent permitted by law, Monad-lab Works LLC and its sole operator Xiangyu shall not be liable for any indirect, incidental, or consequential damages arising from your use of the services."
         ]
       },
       {

@@ -12,7 +12,7 @@ interface AboutProps {
 }
 
 export default function About({
-  founderId = "Xiangyu Huang",
+  founderId = "Xiangyu",
   id = "about",
   className,
 }: AboutProps) {

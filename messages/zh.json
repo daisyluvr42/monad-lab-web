@@ -16,14 +16,6 @@
       {
         "label": "联系",
         "href": "/#contact"
-      },
-      {
-        "label": "隐私政策",
-        "href": "/privacy"
-      },
-      {
-        "label": "服务条款",
-        "href": "/terms"
       }
     ],
     "toggle": {
@@ -218,7 +210,7 @@
       {
         "title": "5. 责任限制",
         "body": [
-          "在法律允许的最大范围内，Monad-lab Works LLC 及其唯一运营者 Xiangyu Huang 对您使用服务导致的任何间接、附带或后果性损害不承担责任。"
+          "在法律允许的最大范围内，Monad-lab Works LLC 及其唯一运营者 Xiangyu 对您使用服务导致的任何间接、附带或后果性损害不承担责任。"
         ]
       },
       {

@@ -42,7 +42,7 @@ export default function FooterSection({
                 {t("footer.tagline")}
               </p>
               <div className="text-muted-foreground font-mono text-xs">
-                {t("footer.founderLabel")}: Xiangyu Huang
+                {t("footer.founderLabel")}: Xiangyu
               </div>
             </FooterColumn>
             <FooterColumn>
