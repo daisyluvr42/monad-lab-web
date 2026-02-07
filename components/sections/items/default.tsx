@@ -1,6 +1,7 @@
-"use client";
-
+import * as React from "react";
+import Link from "next/link";
 import { useI18n } from "@/components/contexts/i18n-provider";
+import { cn } from "@/lib/utils";
 
 import { Item, ItemDescription, ItemIcon, ItemTitle } from "../../ui/item";
 import { Section } from "../../ui/section";
@@ -9,6 +10,7 @@ interface UnitItem {
   label: string;
   title: string;
   description: string;
+  href?: string;
 }
 
 interface ItemsProps {
@@ -36,21 +38,39 @@ export default function Items({
         </h2>
         {resolvedItems !== false && resolvedItems.length > 0 && (
           <div className="grid auto-rows-fr grid-cols-1 gap-6 sm:grid-cols-3">
-            {resolvedItems.map((item, index) => (
-              <Item key={index}>
-                <ItemTitle className="flex items-center gap-2">
-                  <ItemIcon>
-                    <span className="text-muted-foreground font-mono text-xs tracking-[0.2em] uppercase">
-                      {item.label}
-                    </span>
-                  </ItemIcon>
-                  {item.title}
-                </ItemTitle>
-                <ItemDescription className="max-w-none">
-                  {item.description}
-                </ItemDescription>
-              </Item>
-            ))}
+            {resolvedItems.map((item, index) => {
+              const ItemContent = (
+                <Item className={cn(item.href && "hover:bg-muted/50 transition-colors duration-200")}>
+                  <ItemTitle className="flex items-center gap-2">
+                    <ItemIcon>
+                      <span className="text-muted-foreground font-mono text-xs tracking-[0.2em] uppercase">
+                        {item.label}
+                      </span>
+                    </ItemIcon>
+                    {item.title}
+                  </ItemTitle>
+                  <ItemDescription className="max-w-none">
+                    {item.description}
+                  </ItemDescription>
+                </Item>
+              );
+
+              if (item.href) {
+                return (
+                  <Link
+                    key={index}
+                    href={item.href}
+                    target={item.href.startsWith("http") ? "_blank" : undefined}
+                    rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                    className="block active:scale-95 transition-transform duration-100"
+                  >
+                    {ItemContent}
+                  </Link>
+                );
+              }
+
+              return <React.Fragment key={index}>{ItemContent}</React.Fragment>;
+            })}
           </div>
         )}
       </div>
