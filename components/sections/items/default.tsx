@@ -1,3 +1,5 @@
+"use client";
+
 import * as React from "react";
 import Link from "next/link";
 import { useI18n } from "@/components/contexts/i18n-provider";
